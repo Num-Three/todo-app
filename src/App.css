@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.App {
+  text-align: center;
+  font-family:'Raleway';
+  color:#ffffff;
+  text-transform: uppercase;
+  padding: 70px 0;
+  text-shadow: 0 0 5px currentColor,
+              0 0 25px currentColor,
+              0 0 50px currentColor,
+              0 0 200px currentColor;;
+}
+
+.p-jumbo {
+  font-size: 42px;
+  margin: 12px;
+}
+
+html {
+  background-color: rgb(24,24,24);
+  scroll-behavior: smooth;
+}
+
+ul {
+  padding: 0;
+}
+
+.li-todo {
+  background: rgba(41, 42, 43, 1);
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.4);
+  width: 650px;
+  height: 100px;
+  align-content: center;  
+  margin: 0px auto 12px auto;
+  padding: 20px;
+  list-style: none;
+  color: #ffffff;
+  box-shadow: 0 0 5px #ffffff,
+              0 0 10px #ffffff,
+              0 0 25px #ffffff,
+              0 0 200px #ffffff;;
+  transition: 1s;
+}
+
+.li-todo.complete {
+  color: rgba(0, 255, 128, 1);
+  box-shadow: none;
+  width: 400px;
+  height: 100px;
+  text-decoration: line-through;
+}
+
+.button.complete:hover{
+  background-color: rgba(0, 255, 128, 1);
+}
+
+.button.edit:hover{
+  background-color: rgb(151, 151, 151);
+}
+
+.button.remove:hover{
+  background-color: rgb(255, 55, 55);
+}
+
+input {
+  color:#ffffff;
+  padding: 4px 12px 4px 12px;
+  border: 1px solid;
+  border-color: #ffffff;
+  background: none;
+  transition: 0.25s;
+}
+
+input::placeholder {
+  color:#ffffff;
+}
+
+button {
+  color:#ffffff;
+  margin-left: 12px;
+  margin-right: 12px;
+  padding: 4px 12px 4px 12px;
+  border: 1px solid;
+  border-color: #ffffff;
+  background: none;
+  transition: 0.25s;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:disabled {
+  background-color: gray;
+  color: rgb(50,50,50);
+  border: none;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: gray;
+  color: rgb(50,50,50);
+  border: none;
+  scale: 1;
+}
+
+input:hover{
+  scale: 1.1;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+button:hover{
+  color: rgb(24,24,24);
+  background: #ffffff;
+  scale: 1.1;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+}
+
+.gif-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeInOut 0.5s ease-in-out;
+}
+
+.gif-animation {
+  width: 100%;
+  height: 100%;
+}
